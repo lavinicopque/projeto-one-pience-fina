@@ -10,7 +10,7 @@ main::after {
     left: 0;
     min-height: 100vh;
 
-    background: linear-gradient(90deg, rgba(2, 0, 36, 0.6010358146067416) 20%, rgba(4, 13, 49, 0.6403616573033708) 25%, rgba(34, 212, 249, 0.280811095505618) 81%, rgba(34, 212, 249, 0.1347436797752809) 100%);
+    background: linear-gradient(90deg, rgba(20, 19, 41, 0.658) 20%, rgba(4, 13, 49, 0.685) 25%, rgba(44, 62, 65, 0.425) 81%, rgba(35, 55, 59, 0.199) 100%);
     width: 100vw;
 }
 
