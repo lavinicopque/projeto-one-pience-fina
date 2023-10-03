@@ -1,0 +1,121 @@
+body {
+    background-color: #000000;
+    overflow: hidden;
+}
+
+main::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.6010358146067416) 20%, rgba(4, 13, 49, 0.6403616573033708) 25%, rgba(34, 212, 249, 0.280811095505618) 81%, rgba(34, 212, 249, 0.1347436797752809) 100%);
+    width: 100vw;
+}
+
+main .personagem {
+    display: none;
+    height: 100vh;
+}
+
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 350px;
+    z-index: 1;
+
+}
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 350px;
+    z-index: 1;
+}
+.conteudo .nome-personagemL {
+    color: #ffffff;
+    font-size: 43px;
+    font-family: "Secular One";
+    font-weight: 400;
+    height: 100%;
+    margin-bottom: 24px;
+}
+
+.conteudo .nome-personagem {
+    color: #ffffff;
+    font-size: 50px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+.conteudo .descricao {
+    color: #ffffff;
+    font-family: "Runik";
+    font-size: 18px;
+    line-height: 30px;
+    background-color: rgba(71, 85, 97, 0.233);
+}
+
+.conteudo .logo {
+    background-image: url(../imagens/one-piece-logo.png);
+    background-size: cover;
+    justify-content: baseline;
+    height: 180px;
+    weight: 250px;
+    margin-bottom: 35px;
+}
+
+.botoes {
+    position: fixed;
+    top: 0%;
+    right: 0%;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botoes .botao {
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    border-radius:50%;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+}
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #d9d9d9;
+}
